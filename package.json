@@ -7,9 +7,9 @@
   },
   "name": "api-express",
   "version": "1.0.0",
-  "main": "app/app.js",
+  "main": "app/server.js",
   "scripts": {
-    "start": "nodemon app/app.js"
+    "start": "nodemon app/server.js"
   },
   "author": "",
   "license": "ISC",
