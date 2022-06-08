@@ -2,7 +2,7 @@ const express = require('express')
 const mongoose = require('mongoose')
 const bodP = require('body-parser')
 
-const dbconfig = require('../config/database.config')
+const dbconfig = require('../config/database.config.js')
 const dbname = 'livres'
 mongoose.connect(dbconfig.url+dbname+dbconfig.options, err => {
         if(err) throw 'erreur d’accès à la base mongo: ',err;
