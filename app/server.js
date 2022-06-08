@@ -19,8 +19,7 @@ app.use(bodP.json())
 app.get('/', function(req, res) {
     res.send('<h1>salut</h1><p>coucou</p>')
 })
-require('./routes/livres_db.js')(app)
-require('./routes/users_db.js')(app)
+require('./routes/acces_db.js')(app)
 
 // SERVER
 app.listen(port, () =>  {

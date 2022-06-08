@@ -33,7 +33,7 @@ exports.create = async (req, res) => {
 }
 
 
-exports.single_get = async (req, res) => {
+exports.single_get = (req, res) => {
     const id = req.params.id
     Livres.findById(id)
     .then(livre => {
@@ -50,7 +50,7 @@ exports.single_get = async (req, res) => {
             })
         }
         return res.status(500).send({
-            message: 'Un truc pas cool est arrivé et ça n’a pas fonctionné. Id = ' +id
+            message: 'Un truc pas cool est arrivé et ça n’a pas fonctionné. Id = ' + id
         })
     })
 }
